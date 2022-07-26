@@ -77,6 +77,8 @@ FF_MAKE_FLAGS=$IJK_MAKE_FLAG
 FF_GCC_VER=$IJK_GCC_VER
 FF_GCC_64_VER=$IJK_GCC_64_VER
 
+# 支持SMB
+FF_CFG_FLAGS="$FF_CFG_FLAGS --enable-libsmbclient"
 
 #----- armv7a begin -----
 if [ "$FF_ARCH" = "armv7a" ]; then
